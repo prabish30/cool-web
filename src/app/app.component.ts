@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(router: Router){
     const navEndEvents = router.events.pipe(filter(event => event instanceof NavigationEnd))
     navEndEvents.subscribe((event: NavigationEnd) => {
-      gtag('config', 'G-ZLWVNCME1T', {
+      gtag('config', 'G-Y090ETQNZ4', {
         'page_path': event.urlAfterRedirects
       });
     });
