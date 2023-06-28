@@ -21,4 +21,11 @@ export class AppComponent {
       });
     });
   }
+  handleGreet() {
+      console.info('Inside greet button click handler');
+      gtag('config', 'G-Y090ETQNZ4', {
+        eventName: 'greet',
+        elementName: 'greet_btn'
+      });
+  }
 }
